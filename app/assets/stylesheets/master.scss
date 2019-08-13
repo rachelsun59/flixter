@@ -1,5 +1,10 @@
 @import "bootstrap";
 
+body {
+    background: image_url('bg.png');
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
 h1, h2, h3, h4, h5, h6, .navbar {
     margin: 0;
 }
@@ -24,7 +29,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
     -o-background-size: cover;
     background-size: cover;
     height: 370px;
-    box-shadow: 0px 3px 8px #2a2a2a;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .frosty h1 {
@@ -41,4 +46,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .btn {
     border-radius: 0;
+}
+
+.feature {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }

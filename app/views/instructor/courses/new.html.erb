@@ -1,13 +1,14 @@
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1>Add a new course</h1>
-  <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+   <%= simple_form_for @course, url: instructor_courses_path do |f| %>
     <%= f.input :title %>
-    <%= f.input :subtitle %>
-    <%= f.input :image %>
-    <%= f.submit "Add the lesson", class: 'btn btn-primary' %>
+    <%= f.input :description %>
+    <%= f.input :cost %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
   <% end %>
-  <br />
   <br />
     <div class="booyah-box col-10 offset-1">
         <h1 class="text-center"><%= @course.title %></h1>
